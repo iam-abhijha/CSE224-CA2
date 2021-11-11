@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Question2"
+    android:orientation="vertical"
+    android:background="#F3ECB3">
+
+    <TextView
+        android:id="@+id/txtHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Your Details"
+        android:layout_centerHorizontal="true"
+        android:textSize="35sp"
+        android:textColor="#F44336"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtHeading"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:hint="Enter Your Name"
+        android:textColor="@color/black"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:textSize="20sp"
+        android:textColorHint="#F44336"
+        android:background="@drawable/border_edittext"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/txtGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:text="Select Gender:"
+        android:textColor="#FFF44336"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/etName"/>
+
+    <RadioGroup
+        android:id="@+id/radioGrp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="60dp"
+        android:layout_below="@id/txtGender">
+
+            <RadioButton
+                android:id="@+id/radioMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:textStyle="italic"
+                android:textColor="#FFF44336"
+                android:textSize="20sp"
+                android:layout_marginRight="10dp"/>
+
+            <RadioButton
+                android:id="@+id/radioFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:textStyle="italic"
+                android:textColor="#FFF44336"
+                android:textSize="20sp"
+                android:layout_marginRight="10dp"/>
+
+            <RadioButton
+                android:id="@+id/radioOther"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Other"
+                android:textStyle="italic"
+                android:textColor="#FFF44336"
+                android:textSize="20sp" />
+
+
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txtSubject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Your Subjects:"
+        android:textSize="25sp"
+        android:layout_marginLeft="50dp"
+        android:textStyle="bold"
+        android:textColor="#FFF44336"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/radioGrp"/>
+
+    <CheckBox
+        android:id="@+id/checkCPP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C++"
+        android:textSize="20sp"
+        android:textColor="#FFF44336"
+        android:layout_below="@+id/txtSubject"
+        android:layout_marginLeft="60dp"/>
+    <CheckBox
+        android:id="@+id/checkJava"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Java"
+        android:textSize="20sp"
+        android:layout_marginTop="-10dp"
+        android:textColor="#FFF44336"
+        android:layout_below="@+id/checkCPP"
+        android:layout_marginLeft="60dp"/>
+    <CheckBox
+        android:id="@+id/checkPython"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Python"
+        android:textSize="20sp"
+        android:layout_marginTop="-10dp"
+        android:textColor="#FFF44336"
+        android:layout_below="@+id/checkJava"
+        android:layout_marginLeft="60dp"/>
+    <CheckBox
+        android:id="@+id/checkKotlin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kotlin"
+        android:textSize="20sp"
+        android:layout_marginTop="-10dp"
+        android:textColor="#FFF44336"
+        android:layout_below="@+id/checkPython"
+        android:layout_marginLeft="60dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkKotlin"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:backgroundTint="#96F49A"
+        android:background="@drawable/round_button"/>
+
+
+</RelativeLayout>
